@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let selectedCategories = JSON.parse(localStorage.getItem('selectedCategories')) || [];
             selectedCategories.push(selectedCategory); 
             localStorage.setItem('selectedCategories', JSON.stringify(selectedCategories));
-
+            localStorage.setItem('selectedCategory', selectedCategory);
             window.location.href = 'questions.html';
         });
     }
@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // for feteching the questions from API
     function fetchQuestions() {
         var selectedCategory = localStorage.getItem('selectedCategory');
+
         fetch(`https://the-trivia-api.com/v2/questions?categories=${selectedCategory}&limit=6&difficulties=easy,medium,hard`)
             .then(function(response) {
                 return response.json();
