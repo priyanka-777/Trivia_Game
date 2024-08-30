@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.Game {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.btn:hover:not([disabled]){
+    background:#222;
+    color:#fff; /*testcolour in hover effect*/
+}
+
+.btn:disabled{
+    cursor:no-drop;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.answers .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.answers .btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.answers .btn:hover {
+    background-color: #0056b3;
+}
+.answers .btn:disabled:hover {
+    background-color: #ccc;
+    
+}
+
+#answer {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+.scores {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+#player1Score, #player2Score {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#end, #playagain {
+    width: 45%;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
